@@ -10,8 +10,12 @@ Several families worked the land between the early-19th and mid-20th centuries. 
 def string_rep(str):
     return {
         'url': request.host_url.rstrip('/') + url_for('about'),
-        'text': about_text
+        'text': str
     }
+
+@app.route('/', methods=['GET'])
+def home():
+    return string_rep('connected to arb server')
 
 @app.route('/about/', methods=['GET'])
 def about():
