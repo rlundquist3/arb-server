@@ -1,1 +1,1 @@
-web: python arb_server.py
+web: gunicorn arb_server:app --log-file -
