@@ -432,4 +432,53 @@ wsgiref==0.1.2
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogs --ttail[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git commit -am 'changed port'[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[Cpush heroku[7P master[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [3Pheroku open
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogs ----tail[1Ptail[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [4Ppip freeze
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinstall gunnicorn[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[4Pfreeze
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgit commit -am  'trying gunicorn'
+[master c159ac1] trying gunicorn
+ 4 files changed, 241 insertions(+), 3 deletions(-)
+(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git pu[K[K[K[K[K[Kheork[K[K[Kroku locl[Kal
+[33m[WARN] No ENV file found[0m
+[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6527] [INFO] Starting gunicorn 19.5.0
+[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6527] [INFO] Listening at: http://0.0.0.0:5000 (6527)
+[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6527] [INFO] Using worker: sync
+[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6532] [INFO] Booting worker with pid: 6532
+^C[33m[WARN] Interrupted by User[0m
+[36m[DONE] Killing all processes with signal  SIGINT[0m
+[35m3:16:28 PM web.1 | [0m [2016-05-18 15:16:28 +0000] [6527] [INFO] Handling signal: int
+[35m3:16:28 PM web.1 | [0m [2016-05-18 15:16:28 +0000] [6532] [INFO] Worker exiting (pid: 6532)
+[35m3:16:28 PM web.1 | [0m [2016-05-18 15:16:28 +0000] [6527] [INFO] Shutting down: Master
+[35m3:16:28 PM web.1[0m [31mExited with exit code null[0m
+[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git push herok u master
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 6.70 KiB | 0 bytes/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Compressing source files... done.[K
+remote: Building source:[K
+remote: 
+remote: -----> Using set buildpack heroku/python[K
+remote: -----> Python app detected[K
+remote:      $ pip install -r requirements.txt[K
+remote:        Collecting gunicorn==19.5.0 (from -r requirements.txt (line 7))[K
+remote:          Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB)[K
+remote:        Installing collected packages: gunicorn[K
+remote:        Successfully installed gunicorn-19.5.0[K
+remote: 
+remote: 
+remote: -----> Discovering process types[K
+remote:        Procfile declares types -> web[K
+remote: 
+remote: -----> Compressing...[K
+remote:        Done: 38.8M[K
+remote: -----> Launching...[K
+remote:        Released v7[K
+remote:        https://arb-server.herokuapp.com/ deployed to Heroku[K
+remote: 
+remote: Verifying deploy... done.[K
+To https://git.heroku.com/arb-server.git
+   45bc030..c159ac1  master -> master
+(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku open
+[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ curl -X http:/ /arb-server.herokuapp.com/ao[Kbb[Kout/
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ curl -X http:///arb-server.herokuapp.com/about/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CGhttp://arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[C[CEhttp:[C/arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[C[C[CThttp://arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist
