@@ -1,540 +1,80 @@
-Script started on Wed 18 May 2016 02:46:03 PM EDT
-]0;Homeriley@rileylundquist:~$ vi[Kenv
-No command 'venv' found, did you mean:
- Command 'env' from package 'coreutils' (main)
-venv: command not found
-]0;Homeriley@rileylundquist:~$ source venc/[K[Kv/b[K[K[K[K[K[K[K[K[K[K[K[K[Kcd /D[K[KDevelopment/ArbServer/
-]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ ve[K[Ksource venv/bin/activvate
-]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ venv[K[K[Kirtualenv venv
-New python executable in venv/bin/python
-Installing setuptools, pip...done.
-Overwriting venv/bin/activate with new content
-]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ v[Ksource venv [K/bina[K/activvate
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ pip install -r  requirements.txt 
-Requirement already satisfied (use --upgrade to upgrade): Flask==0.10.1 in ./venv/lib/python2.7/site-packages (from -r requirements.txt (line 1))
-Requirement already satisfied (use --upgrade to upgrade): Flask-API==0.6.5 in ./venv/lib/python2.7/site-packages (from -r requirements.txt (line 2))
-Requirement already satisfied (use --upgrade to upgrade): Flask-PyMongo==0.4.1 in ./venv/lib/python2.7/site-packages (from -r requirements.txt (line 3))
-Requirement already satisfied (use --upgrade to upgrade): Jinja2==2.8 in ./venv/lib/python2.7/site-packages (from -r requirements.txt (line 4))
-Requirement already satisfied (use --upgrade to upgrade): Markdown==2.6.5 in ./venv/lib/python2.7/site-packages (from -r requirements.txt (line 5))
-Requirement already satisfied (use --upgrade to upgrade): MarkupSafe==0.23 in ./venv/lib/python2.7/site-packages (from -r requirements.txt (line 6))
-Requirement already satisfied (use --upgrade to upgrade): Werkzeug>=0.7 in ./venv/lib/python2.7/site-packages (from Flask==0.10.1->-r requirements.txt (line 1))
-Requirement already satisfied (use --upgrade to upgrade): itsdangerous>=0.21 in ./venv/lib/python2.7/site-packages (from Flask==0.10.1->-r requirements.txt (line 1))
-Cleaning up...
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku local w eb
-[33m[WARN] No ENV file found[0m
-[35m2:47:58 PM web.1 | [0m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET / HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/css/bootstrap.min.css HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/css/bootstrap-tweaks.css HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/css/prettify.css HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/css/default.css HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/js/jquery-1.8.1-min.js HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/js/bootstrap.min.js HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/js/prettify-min.js HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/js/default.js HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /flask-api/static/img/grid.png HTTP/1.1" 200 -
-[35m2:48:12 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:12] "GET /favicon.ico HTTP/1.1" 404 -
-^C[33m[WARN] Interrupted by User[0m
-[36m[DONE] Killing all processes with signal  SIGINT[0m
-[35m2:48:52 PM web.1[0m [31mExited with exit code null[0m
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku local weeb
-[33m[WARN] No ENV file found[0m
-[35m2:48:56 PM web.1 | [0m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET / HTTP/1.1" 200 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/css/bootstrap.min.css HTTP/1.1" 304 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/css/bootstrap-tweaks.css HTTP/1.1" 304 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/css/prettify.css HTTP/1.1" 304 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/css/default.css HTTP/1.1" 304 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/js/bootstrap.min.js HTTP/1.1" 304 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/js/jquery-1.8.1-min.js HTTP/1.1" 304 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/js/prettify-min.js HTTP/1.1" 304 -
-[35m2:48:59 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:48:59] "GET /flask-api/static/js/default.js HTTP/1.1" 304 -
-[35m2:49:05 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:49:05] "GET /about HTTP/1.1" 301 -
-[35m2:49:05 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:49:05] "GET /about/ HTTP/1.1" 200 -
-[35m2:49:15 PM web.1 | [0m 127.0.0.1 - - [18/May/2016 14:49:15] "GET /about/ HTTP/1.1" 200 -
-^C[33m[WARN] Interrupted by User[0m
-[36m[DONE] Killing all processes with signal  SIGINT[0m
-[35m2:49:21 PM web.1[0m [31mExited with exit code null[0m
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git push herok u master
-Everything up-to-date
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git commit 0am  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K-am  'tryp[King to fix port'
-[master d59d7ed] trying to fix port
- 2 files changed, 48 insertions(+), 81 deletions(-)
- rewrite venv/bin/activate (100%)
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git commit -am  'trying to fix port'[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[Cpush heroku[13P master
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 1.50 KiB | 0 bytes/s, done.
-Total 6 (delta 3), reused 0 (delta 0)
-remote: Compressing source files... done.[K
-remote: Building source:[K
-remote: 
-remote: -----> Using set buildpack heroku/python[K
-remote: -----> Python app detected[K
-remote:      $ pip install -r requirements.txt[K
-remote: 
-remote: 
-remote: -----> Discovering process types[K
-remote:        Procfile declares types -> web[K
-remote: 
-remote: -----> Compressing...[K
-remote:        Done: 38.5M[K
-remote: -----> Launching...[K
-remote:        Released v4[K
-remote:        https://arb-server.herokuapp.com/ deployed to Heroku[K
-remote: 
-remote: Verifying deploy... done.[K
-To https://git.heroku.com/arb-server.git
-   56b9f5c..d59d7ed  master -> master
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heero[K[K[Kroku open
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku open
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git add [K[K[K[Kcomt[Kmit -am  'changed host'
-[master 0de4737] changed host
- 1 file changed, 1 insertion(+), 1 deletion(-)
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git push herok u master
-Counting objects: 5, done.
-Delta compression using up to 4 threads.
-Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
-Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 306 bytes | 0 bytes/s, done.
-Total 3 (delta 2), reused 0 (delta 0)
-remote: Compressing source files... done.[K
-remote: Building source:[K
-remote: 
-remote: -----> Using set buildpack heroku/python[K
-remote: -----> Python app detected[K
-remote:      $ pip install -r requirements.txt[K
-remote: 
-remote: 
-remote: -----> Discovering process types[K
-remote:        Procfile declares types -> web[K
-remote: 
-remote: -----> Compressing...[K
-remote:        Done: 38.5M[K
-remote: -----> Launching...[K
-remote:        Released v5[K
-remote:        https://arb-server.herokuapp.com/ deployed to Heroku[K
-remote: 
-remote: Verifying deploy... done.[K
-To https://git.heroku.com/arb-server.git
-   d59d7ed..0de4737  master -> master
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku open
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heo[Kroku logs == t[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K-- tail
-[36m2016-05-18T15:20:27.431845+00:00 heroku[api]:[39m Release v2 created by rlundquist3@gmail.com
-[36m2016-05-18T15:20:27.431845+00:00 heroku[api]:[39m Enable Logplex by rlundquist3@gmail.com
-[36m2016-05-18T15:29:23.907428+00:00 heroku[api]:[39m Scale to web=1 by rlundquist3@gmail.com
-[36m2016-05-18T15:29:23.908226+00:00 heroku[api]:[39m Deploy 56b9f5c by rlundquist3@gmail.com
-[36m2016-05-18T15:29:23.908297+00:00 heroku[api]:[39m Release v3 created by rlundquist3@gmail.com
-[35m2016-05-18T15:29:24.452058+00:00 heroku[slug-compiler]:[39m Slug compilation started
-[35m2016-05-18T15:29:24.452068+00:00 heroku[slug-compiler]:[39m Slug compilation finished
-[33m2016-05-18T15:29:26.660716+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T15:29:28.791756+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[33m2016-05-18T15:30:26.959117+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T15:30:26.958937+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T15:30:27.751629+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[33m2016-05-18T15:30:27.698089+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T15:30:27.750489+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[33m2016-05-18T15:30:29.932963+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T15:30:31.212298+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[32m2016-05-18T15:31:23.986610+00:00 heroku[router]:[39m at=error code=H20 desc="App boot timeout" method=GET path="/" host=arb-server.herokuapp.com request_id=a15c1f78-7379-4396-adcb-d2d5cfa4600a fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[33m2016-05-18T15:31:30.462919+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T15:31:30.462919+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T15:31:31.192494+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T15:31:31.211465+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[32m2016-05-18T15:31:31.990577+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/about/" host=arb-server.herokuapp.com request_id=a7a86b24-0177-468f-b6d6-8ee7c7904246 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T15:31:32.159942+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/about/" host=arb-server.herokuapp.com request_id=28b7592f-c759-4f2b-8d42-1ab6af553452 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T15:31:32.093999+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=16928855-f405-4eb2-bb7a-79abbd88bae8 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T15:31:32.587762+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=841a9c5f-f364-4e4d-b033-2d12905f41de fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T15:31:33.410980+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=dbfa4446-2989-4b12-931f-6190ac7fc3cf fwd="66.85.140.108" dyno= connect= service= status=503 bytes=
-[33m2016-05-18T15:54:48.063741+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[33m2016-05-18T15:54:50.778448+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T15:54:52.974772+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[33m2016-05-18T15:55:51.307573+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T15:55:51.307517+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T15:55:52.063009+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[33m2016-05-18T15:55:52.065118+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T16:43:01.565102+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[33m2016-05-18T16:43:05.901386+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T16:43:07.656332+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[33m2016-05-18T16:44:06.208862+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T16:44:06.208862+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T16:44:06.982377+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T16:44:07.001745+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[33m2016-05-18T18:10:24.016994+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[33m2016-05-18T18:10:26.984577+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T18:10:29.672939+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[33m2016-05-18T18:11:27.370377+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T18:11:27.370377+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T18:11:28.344558+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T18:11:28.369757+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[32m2016-05-18T18:37:08.762557+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/about/" host=arb-server.herokuapp.com request_id=9865f8c8-587c-43d7-ab5e-e5c9759f7188 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:37:09.098553+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=ced5de87-31af-4279-87e3-01665c6d8d2b fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:37:10.734495+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=b74149c5-6360-4743-a174-bfcd1d8053cc fwd="107.155.85.174" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:37:11.602206+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=697cc2c5-a7f3-456a-a0e5-09374b7e1b4e fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:41:04.863543+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=2dc6cf2c-452c-4cb5-8e7d-86c21e1ba8e8 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:41:05.317177+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=f1e68d4f-3b7d-49a4-9ac3-b9223fa48872 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:41:24.099014+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=0f13867a-1a50-4e66-9de2-06b69ca362c7 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:41:24.455645+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=0f6283d6-7f80-4534-82ba-45dabe8baede fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:42:30.458045+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=3ca07e90-87c3-450f-890a-7fe7c91ba186 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:42:30.936672+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=5133448e-8798-45fb-9dec-a00ee816fbf1 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:50:15.227898+00:00 heroku[api]:[39m Release v4 created by rlundquist3@gmail.com
-[36m2016-05-18T18:50:15.227853+00:00 heroku[api]:[39m Deploy d59d7ed by rlundquist3@gmail.com
-[33m2016-05-18T18:50:15.547920+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T18:50:16.438544+00:00 heroku[slug-compiler]:[39m Slug compilation finished
-[35m2016-05-18T18:50:16.438538+00:00 heroku[slug-compiler]:[39m Slug compilation started
-[33m2016-05-18T18:50:18.295462+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T18:50:20.657523+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[33m2016-05-18T18:51:18.394973+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T18:51:18.394973+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T18:51:19.332126+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[33m2016-05-18T18:51:19.333071+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[33m2016-05-18T18:51:19.301585+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T18:51:22.543615+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T18:51:26.565428+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[32m2016-05-18T18:51:44.894599+00:00 heroku[router]:[39m at=error code=H20 desc="App boot timeout" method=GET path="/" host=arb-server.herokuapp.com request_id=24fc6e69-c813-4b19-81f4-5fa8435b2dfe fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[33m2016-05-18T18:52:22.750206+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T18:52:22.750049+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T18:52:23.589155+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T18:52:23.610549+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[32m2016-05-18T18:55:38.835043+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=62bd5f90-5b4e-42d9-885d-37f4d8accae1 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:55:39.276563+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=6b580a98-eb9a-409e-bab5-71455f9bc2aa fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[35m2016-05-18T18:58:23.792697+00:00 heroku[slug-compiler]:[39m Slug compilation started
-[35m2016-05-18T18:58:23.792705+00:00 heroku[slug-compiler]:[39m Slug compilation finished
-[36m2016-05-18T18:58:23.604509+00:00 heroku[api]:[39m Release v5 created by rlundquist3@gmail.com
-[36m2016-05-18T18:58:23.604509+00:00 heroku[api]:[39m Deploy 0de4737 by rlundquist3@gmail.com
-[33m2016-05-18T18:58:23.793650+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[33m2016-05-18T18:58:26.352672+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[33m2016-05-18T18:58:28.869487+00:00 app[web.1]:[39m  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
-[33m2016-05-18T18:59:26.437374+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[33m2016-05-18T18:59:26.437374+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[33m2016-05-18T18:59:27.274101+00:00 heroku[web.1]:[39m Process exited with status 137
-[33m2016-05-18T18:59:27.257546+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[32m2016-05-18T18:59:29.931644+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=d9258531-0575-4e2d-8d28-ca21cff22150 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-^C[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git commit -am  'changed port'
-[master 45bc030] changed port
- 2 files changed, 157 insertions(+), 2 deletions(-)
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git push herok u master
-Counting objects: 11, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 3.87 KiB | 0 bytes/s, done.
-Total 6 (delta 3), reused 0 (delta 0)
-remote: Compressing source files... done.[K
-remote: Building source:[K
-remote: 
-remote: -----> Using set buildpack heroku/python[K
-remote: -----> Python app detected[K
-remote:      $ pip install -r requirements.txt[K
-remote: 
-remote: 
-remote: -----> Discovering process types[K
-remote:        Procfile declares types -> web[K
-remote: 
-remote: -----> Compressing...[K
-remote:        Done: 38.5M[K
-remote: -----> Launching...[K
-remote:        Released v6[K
-remote:        https://arb-server.herokuapp.com/ deployed to Heroku[K
-remote: 
-remote: Verifying deploy.... done.[K
-To https://git.heroku.com/arb-server.git
-   0de4737..45bc030  master -> master
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku open
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku logs -- -tail
- [31m▸[39m    Error: Unexpected flag [31m---tail[39m
- [31m▸[39m    Usage: [36mheroku logs[39m
- [31m▸[39m    
- [31m▸[39m    This flag is invalid for this command. Here are the accepted flags:
- [31m▸[39m     -n, --num NUM       # number of lines to display
- [31m▸[39m     -d, --dyno DYNO     # dyno to limit filter by
- [31m▸[39m     -s, --source SOURCE # log source to limit filter by
- [31m▸[39m     -t, --tail          # continually stream logs
- [31m▸[39m     --force-colors      # force use of colors (even on non-tty output)
- [31m▸[39m     -a, --app APP       # app to run command against
- [31m▸[39m     -r, --remote REMOTE # git remote of app to run command against
- [31m▸[39m    
- [31m▸[39m    See more information with [36mheroku logs --help[39m
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku logs ----tail[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- tail
-[36m2016-05-18T15:31:31.990577+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/about/" host=arb-server.herokuapp.com request_id=a7a86b24-0177-468f-b6d6-8ee7c7904246 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T15:31:32.159942+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/about/" host=arb-server.herokuapp.com request_id=28b7592f-c759-4f2b-8d42-1ab6af553452 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T15:31:32.093999+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=16928855-f405-4eb2-bb7a-79abbd88bae8 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T15:31:32.587762+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=841a9c5f-f364-4e4d-b033-2d12905f41de fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T15:31:33.410980+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=dbfa4446-2989-4b12-931f-6190ac7fc3cf fwd="66.85.140.108" dyno= connect= service= status=503 bytes=
-[35m2016-05-18T15:54:48.063741+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T15:54:50.778448+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T15:54:52.974772+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[35m2016-05-18T15:55:51.307573+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[35m2016-05-18T15:55:51.307517+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[35m2016-05-18T15:55:52.063009+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[35m2016-05-18T15:55:52.065118+00:00 heroku[web.1]:[39m Process exited with status 137
-[35m2016-05-18T16:43:01.565102+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T16:43:05.901386+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T16:43:07.656332+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[35m2016-05-18T16:44:06.208862+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[35m2016-05-18T16:44:06.208862+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[35m2016-05-18T16:44:06.982377+00:00 heroku[web.1]:[39m Process exited with status 137
-[35m2016-05-18T16:44:07.001745+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[35m2016-05-18T18:10:24.016994+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T18:10:26.984577+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T18:10:29.672939+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[35m2016-05-18T18:11:27.370377+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[35m2016-05-18T18:11:27.370377+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[35m2016-05-18T18:11:28.344558+00:00 heroku[web.1]:[39m Process exited with status 137
-[35m2016-05-18T18:11:28.369757+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[36m2016-05-18T18:37:08.762557+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/about/" host=arb-server.herokuapp.com request_id=9865f8c8-587c-43d7-ab5e-e5c9759f7188 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:37:09.098553+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=ced5de87-31af-4279-87e3-01665c6d8d2b fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:37:10.734495+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=b74149c5-6360-4743-a174-bfcd1d8053cc fwd="107.155.85.174" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:37:11.602206+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=697cc2c5-a7f3-456a-a0e5-09374b7e1b4e fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:41:04.863543+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=2dc6cf2c-452c-4cb5-8e7d-86c21e1ba8e8 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:41:05.317177+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=f1e68d4f-3b7d-49a4-9ac3-b9223fa48872 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:41:24.099014+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=0f13867a-1a50-4e66-9de2-06b69ca362c7 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:41:24.455645+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=0f6283d6-7f80-4534-82ba-45dabe8baede fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:42:30.458045+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=3ca07e90-87c3-450f-890a-7fe7c91ba186 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:42:30.936672+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=5133448e-8798-45fb-9dec-a00ee816fbf1 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[33m2016-05-18T18:50:15.227898+00:00 heroku[api]:[39m Release v4 created by rlundquist3@gmail.com
-[33m2016-05-18T18:50:15.227853+00:00 heroku[api]:[39m Deploy d59d7ed by rlundquist3@gmail.com
-[35m2016-05-18T18:50:15.547920+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[32m2016-05-18T18:50:16.438544+00:00 heroku[slug-compiler]:[39m Slug compilation finished
-[32m2016-05-18T18:50:16.438538+00:00 heroku[slug-compiler]:[39m Slug compilation started
-[35m2016-05-18T18:50:18.295462+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T18:50:20.657523+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[35m2016-05-18T18:51:18.394973+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[35m2016-05-18T18:51:18.394973+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[35m2016-05-18T18:51:19.332126+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[35m2016-05-18T18:51:19.333071+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T18:51:19.301585+00:00 heroku[web.1]:[39m Process exited with status 137
-[35m2016-05-18T18:51:22.543615+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T18:51:26.565428+00:00 app[web.1]:[39m  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-[36m2016-05-18T18:51:44.894599+00:00 heroku[router]:[39m at=error code=H20 desc="App boot timeout" method=GET path="/" host=arb-server.herokuapp.com request_id=24fc6e69-c813-4b19-81f4-5fa8435b2dfe fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[35m2016-05-18T18:52:22.750206+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[35m2016-05-18T18:52:22.750049+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[35m2016-05-18T18:52:23.589155+00:00 heroku[web.1]:[39m Process exited with status 137
-[35m2016-05-18T18:52:23.610549+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[36m2016-05-18T18:55:38.835043+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=62bd5f90-5b4e-42d9-885d-37f4d8accae1 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T18:55:39.276563+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=6b580a98-eb9a-409e-bab5-71455f9bc2aa fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T18:58:23.792697+00:00 heroku[slug-compiler]:[39m Slug compilation started
-[32m2016-05-18T18:58:23.792705+00:00 heroku[slug-compiler]:[39m Slug compilation finished
-[33m2016-05-18T18:58:23.604509+00:00 heroku[api]:[39m Release v5 created by rlundquist3@gmail.com
-[33m2016-05-18T18:58:23.604509+00:00 heroku[api]:[39m Deploy 0de4737 by rlundquist3@gmail.com
-[35m2016-05-18T18:58:23.793650+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T18:58:26.352672+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T18:58:28.869487+00:00 app[web.1]:[39m  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
-[35m2016-05-18T18:59:26.437374+00:00 heroku[web.1]:[39m Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-[35m2016-05-18T18:59:26.437374+00:00 heroku[web.1]:[39m Stopping process with SIGKILL
-[35m2016-05-18T18:59:27.274101+00:00 heroku[web.1]:[39m Process exited with status 137
-[35m2016-05-18T18:59:27.257546+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[36m2016-05-18T18:59:29.931644+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=d9258531-0575-4e2d-8d28-ca21cff22150 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[32m2016-05-18T19:00:25.826540+00:00 heroku[slug-compiler]:[39m Slug compilation started
-[32m2016-05-18T19:00:25.826546+00:00 heroku[slug-compiler]:[39m Slug compilation finished
-[33m2016-05-18T19:00:25.650649+00:00 heroku[api]:[39m Release v6 created by rlundquist3@gmail.com
-[33m2016-05-18T19:00:25.650649+00:00 heroku[api]:[39m Deploy 45bc030 by rlundquist3@gmail.com
-[35m2016-05-18T19:00:25.901583+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T19:00:28.356604+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T19:00:30.870936+00:00 app[web.1]:[39m   File "arb_server.py", line 25, in <module>
-[35m2016-05-18T19:00:30.870955+00:00 app[web.1]:[39m     app.run(host='0.0.0.0', port=80)
-[35m2016-05-18T19:00:30.870926+00:00 app[web.1]:[39m Traceback (most recent call last):
-[35m2016-05-18T19:00:30.871071+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 694, in run_simple
-[35m2016-05-18T19:00:30.871424+00:00 app[web.1]:[39m     HTTPServer.__init__(self, (host, int(port)), handler)
-[35m2016-05-18T19:00:30.871352+00:00 app[web.1]:[39m     passthrough_errors, ssl_context, fd=fd)
-[35m2016-05-18T19:00:30.871067+00:00 app[web.1]:[39m     run_simple(host, port, self, **options)
-[35m2016-05-18T19:00:30.871278+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 550, in make_server
-[35m2016-05-18T19:00:30.871172+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 656, in inner
-[35m2016-05-18T19:00:30.870956+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 772, in run
-[35m2016-05-18T19:00:30.871356+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 464, in __init__
-[35m2016-05-18T19:00:30.871269+00:00 app[web.1]:[39m     fd=fd)
-[35m2016-05-18T19:00:30.871428+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/SocketServer.py", line 420, in __init__
-[35m2016-05-18T19:00:30.871689+00:00 app[web.1]:[39m     return getattr(self._sock,name)(*args)
-[35m2016-05-18T19:00:30.871572+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/SocketServer.py", line 434, in server_bind
-[35m2016-05-18T19:00:30.871497+00:00 app[web.1]:[39m     self.server_bind()
-[35m2016-05-18T19:00:30.871518+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-[35m2016-05-18T19:00:30.871563+00:00 app[web.1]:[39m     SocketServer.TCPServer.server_bind(self)
-[35m2016-05-18T19:00:30.871648+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/socket.py", line 228, in meth
-[35m2016-05-18T19:00:30.871168+00:00 app[web.1]:[39m     inner()
-[35m2016-05-18T19:00:30.871708+00:00 app[web.1]:[39m socket.error: [Errno 13] Permission denied
-[35m2016-05-18T19:00:30.871646+00:00 app[web.1]:[39m     self.socket.bind(self.server_address)
-[35m2016-05-18T19:00:31.727361+00:00 heroku[web.1]:[39m Process exited with status 1
-[35m2016-05-18T19:00:31.742976+00:00 heroku[web.1]:[39m State changed from starting to crashed
-[36m2016-05-18T19:00:56.529814+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/" host=arb-server.herokuapp.com request_id=1353579f-43ae-4ca1-83a6-31eb2781a4b4 fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[36m2016-05-18T19:00:57.015895+00:00 heroku[router]:[39m at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=arb-server.herokuapp.com request_id=f0921576-8e98-458e-a09d-4d884b1e36ee fwd="24.176.12.84" dyno= connect= service= status=503 bytes=
-[35m2016-05-18T19:03:49.527397+00:00 heroku[web.1]:[39m State changed from crashed to starting
-[35m2016-05-18T19:03:52.869043+00:00 heroku[web.1]:[39m Starting process with command `python arb_server.py`
-[35m2016-05-18T19:03:55.914474+00:00 app[web.1]:[39m Traceback (most recent call last):
-[35m2016-05-18T19:03:55.914526+00:00 app[web.1]:[39m   File "arb_server.py", line 25, in <module>
-[35m2016-05-18T19:03:55.914575+00:00 app[web.1]:[39m     app.run(host='0.0.0.0', port=80)
-[35m2016-05-18T19:03:55.914614+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 772, in run
-[35m2016-05-18T19:03:55.914971+00:00 app[web.1]:[39m     run_simple(host, port, self, **options)
-[35m2016-05-18T19:03:55.915023+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 694, in run_simple
-[35m2016-05-18T19:03:55.915244+00:00 app[web.1]:[39m     inner()
-[35m2016-05-18T19:03:55.915303+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 656, in inner
-[35m2016-05-18T19:03:55.915474+00:00 app[web.1]:[39m     fd=fd)
-[35m2016-05-18T19:03:55.915501+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 550, in make_server
-[35m2016-05-18T19:03:55.915664+00:00 app[web.1]:[39m     passthrough_errors, ssl_context, fd=fd)
-[35m2016-05-18T19:03:55.915689+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/site-packages/werkzeug/serving.py", line 464, in __init__
-[35m2016-05-18T19:03:55.915995+00:00 app[web.1]:[39m     HTTPServer.__init__(self, (host, int(port)), handler)
-[35m2016-05-18T19:03:55.916035+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/SocketServer.py", line 420, in __init__
-[35m2016-05-18T19:03:55.916176+00:00 app[web.1]:[39m     self.server_bind()
-[35m2016-05-18T19:03:55.916201+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/BaseHTTPServer.py", line 108, in server_bind
-[35m2016-05-18T19:03:55.916255+00:00 app[web.1]:[39m     SocketServer.TCPServer.server_bind(self)
-[35m2016-05-18T19:03:55.916308+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/SocketServer.py", line 434, in server_bind
-[35m2016-05-18T19:03:55.916410+00:00 app[web.1]:[39m     self.socket.bind(self.server_address)
-[35m2016-05-18T19:03:55.916456+00:00 app[web.1]:[39m   File "/app/.heroku/python/lib/python2.7/socket.py", line 228, in meth
-[35m2016-05-18T19:03:55.916543+00:00 app[web.1]:[39m     return getattr(self._sock,name)(*args)
-[35m2016-05-18T19:03:55.916656+00:00 app[web.1]:[39m socket.error: [Errno 13] Permission denied
-[35m2016-05-18T19:03:56.889643+00:00 heroku[web.1]:[39m Process exited with status 1
-[35m2016-05-18T19:03:56.904320+00:00 heroku[web.1]:[39m State changed from starting to crashed
+# This file must be used with "source bin/activate" *from bash*
+# you cannot run it directly
 
+deactivate () {
+    unset pydoc
 
-^C[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ pip freeze
-Flask==0.10.1
-Flask-API==0.6.5
-Flask-PyMongo==0.4.1
-Jinja2==2.8
-Markdown==2.6.5
-MarkupSafe==0.23
-Werkzeug==0.11.9
-argparse==1.2.1
-itsdangerous==0.24
-pymongo==3.2.2
-wsgiref==0.1.2
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ pip install gu nicorn
-Downloading/unpacking gunicorn
-  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):   Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):   3%  4.1kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):   7%  8.2kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  10%  12kB   Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  14%  16kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  18%  20kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  21%  24kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  25%  28kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  28%  32kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  32%  36kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  36%  40kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  39%  45kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  43%  49kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  46%  53kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  50%  57kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  54%  61kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  57%  65kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  61%  69kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  64%  73kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  68%  77kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  72%  81kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  75%  86kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  79%  90kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  82%  94kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  86%  98kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  90%  102kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  93%  106kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):  97%  110kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB): 100%  113kB  Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB):              Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB): 113kB downloaded
-Installing collected packages: gunicorn
-Compiling /home/riley/Development/ArbServer/venv/build/gunicorn/gunicorn/workers/_gaiohttp.py ...
-  File "/home/riley/Development/ArbServer/venv/build/gunicorn/gunicorn/workers/_gaiohttp.py", line 84
-    yield from self.wsgi.close()
-             ^
-SyntaxError: invalid syntax
+    # reset old environment variables
+    if [ -n "$_OLD_VIRTUAL_PATH" ] ; then
+        PATH="$_OLD_VIRTUAL_PATH"
+        export PATH
+        unset _OLD_VIRTUAL_PATH
+    fi
+    if [ -n "$_OLD_VIRTUAL_PYTHONHOME" ] ; then
+        PYTHONHOME="$_OLD_VIRTUAL_PYTHONHOME"
+        export PYTHONHOME
+        unset _OLD_VIRTUAL_PYTHONHOME
+    fi
 
-Successfully installed gunicorn
-Cleaning up...
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ pip freeze
-Flask==0.10.1
-Flask-API==0.6.5
-Flask-PyMongo==0.4.1
-Jinja2==2.8
-Markdown==2.6.5
-MarkupSafe==0.23
-Werkzeug==0.11.9
-argparse==1.2.1
-gunicorn==19.5.0
-itsdangerous==0.24
-pymongo==3.2.2
-wsgiref==0.1.2
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ pip freezeinstall gunnicorn[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[4Pfreeze
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku logs --ttail-tail[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[3Popen
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push herokuu master[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[Ccommit -am 'changed port'[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku logs --tail[K[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[3Popen
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit push herokuu master[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[Ccommit -am 'changed host'[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [3Pheroku open
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -am  'changed host'[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[Cpush heroku[7P master[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [3Pheroku open
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogs --ttail[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git commit -am 'changed port'[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[Cpush heroku[7P master[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [3Pheroku open
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogs ----tail[1Ptail[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [4Ppip freeze
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cinstall gunnicorn[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[4Pfreeze
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgit commit -am  'trying gunicorn'
-[master c159ac1] trying gunicorn
- 4 files changed, 241 insertions(+), 3 deletions(-)
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git pu[K[K[K[K[K[Kheork[K[K[Kroku locl[Kal
-[33m[WARN] No ENV file found[0m
-[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6527] [INFO] Starting gunicorn 19.5.0
-[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6527] [INFO] Listening at: http://0.0.0.0:5000 (6527)
-[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6527] [INFO] Using worker: sync
-[35m3:14:10 PM web.1 | [0m [2016-05-18 15:14:10 +0000] [6532] [INFO] Booting worker with pid: 6532
-^C[33m[WARN] Interrupted by User[0m
-[36m[DONE] Killing all processes with signal  SIGINT[0m
-[35m3:16:28 PM web.1 | [0m [2016-05-18 15:16:28 +0000] [6527] [INFO] Handling signal: int
-[35m3:16:28 PM web.1 | [0m [2016-05-18 15:16:28 +0000] [6532] [INFO] Worker exiting (pid: 6532)
-[35m3:16:28 PM web.1 | [0m [2016-05-18 15:16:28 +0000] [6527] [INFO] Shutting down: Master
-[35m3:16:28 PM web.1[0m [31mExited with exit code null[0m
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git push herok u master
-Counting objects: 15, done.
-Delta compression using up to 4 threads.
-Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
-Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 6.70 KiB | 0 bytes/s, done.
-Total 8 (delta 4), reused 0 (delta 0)
-remote: Compressing source files... done.[K
-remote: Building source:[K
-remote: 
-remote: -----> Using set buildpack heroku/python[K
-remote: -----> Python app detected[K
-remote:      $ pip install -r requirements.txt[K
-remote:        Collecting gunicorn==19.5.0 (from -r requirements.txt (line 7))[K
-remote:          Downloading gunicorn-19.5.0-py2.py3-none-any.whl (113kB)[K
-remote:        Installing collected packages: gunicorn[K
-remote:        Successfully installed gunicorn-19.5.0[K
-remote: 
-remote: 
-remote: -----> Discovering process types[K
-remote:        Procfile declares types -> web[K
-remote: 
-remote: -----> Compressing...[K
-remote:        Done: 38.8M[K
-remote: -----> Launching...[K
-remote:        Released v7[K
-remote:        https://arb-server.herokuapp.com/ deployed to Heroku[K
-remote: 
-remote: Verifying deploy... done.[K
-To https://git.heroku.com/arb-server.git
-   45bc030..c159ac1  master -> master
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ heroku open
-[?25h(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ curl -X http:/ /arb-server.herokuapp.com/ao[Kbb[Kout/
-curl: no URL specified!
-curl: try 'curl --help' or 'curl --manual' for more information
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ curl -X http:///arb-server.herokuapp.com/about/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CGhttp://arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[C[CEhttp:[C/arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[C[C[CThttp://arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[C[C[C[C http://arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [C[C[C[C[C[C[C[C[C[C[C[C
-
-{"url": "http://arb-server.herokuapp.com/about/", "text": "Kalamazoo College's Lillian Anderson Arboretum comprises 140 acres of marsh, meadow, pine plantation and second-growth deciduous forest in Oshtemo Township, Kalamazoo County, Michigan.\n\n\nSeveral families worked the land between the early-19th and mid-20th centuries. Lillian Anderson, a K graduate, donated approximately 100 acres of her family's farm to the College in 1982. In 2000, thanks to the generous financial assistance of Dr. and Mrs. H. Lewis Batts, the College added 31 acres of land along the eastern boundary of the original Anderson property. The Arboretum was established in 1998 as a resource for the Kalamazoo College community, Kalamazoo-area residents, and visitors to the area.\n"}(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ curl -X GET htttp://arb-server.herokuapp.com/about/[A(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ [K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl -X GET htttp://arb-server.herokuapp.com/about/
-{"url": "http://arb-server.herokuapp.com/about/", "text": "Kalamazoo College's Lillian Anderson Arboretum comprises 140 acres of marsh, meadow, pine plantation and second-growth deciduous forest in Oshtemo Township, Kalamazoo County, Michigan.\n\n\nSeveral families worked the land between the early-19th and mid-20th centuries. Lillian Anderson, a K graduate, donated approximately 100 acres of her family's farm to the College in 1982. In 2000, thanks to the generous financial assistance of Dr. and Mrs. H. Lewis Batts, the College added 31 acres of land along the eastern boundary of the original Anderson property. The Arboretum was established in 1998 as a resource for the Kalamazoo College community, Kalamazoo-area residents, and visitors to the area.\n"}(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ cd [K[K[Kgit add .
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git commit -am  'server[K[K[K[K[K[Kinital [K[K[Ki[K[K[K[K[Ktest server working for ao[Kbout'
-[master a707cab] test server working for about
- 4 files changed, 83 insertions(+), 1 deletion(-)
- create mode 100755 venv/bin/gunicorn
- create mode 100755 venv/bin/gunicorn_django
- create mode 100755 venv/bin/gunicorn_paster
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git push origi n master
-Counting objects: 53, done.
-Delta compression using up to 4 threads.
-Compressing objects:   2% (1/43)   Compressing objects:   4% (2/43)   Compressing objects:   6% (3/43)   Compressing objects:   9% (4/43)   Compressing objects:  11% (5/43)   Compressing objects:  13% (6/43)   Compressing objects:  16% (7/43)   Compressing objects:  18% (8/43)   Compressing objects:  20% (9/43)   Compressing objects:  23% (10/43)   Compressing objects:  25% (11/43)   Compressing objects:  27% (12/43)   Compressing objects:  30% (13/43)   Compressing objects:  32% (14/43)   Compressing objects:  34% (15/43)   Compressing objects:  37% (16/43)   Compressing objects:  39% (17/43)   Compressing objects:  41% (18/43)   Compressing objects:  44% (19/43)   Compressing objects:  46% (20/43)   Compressing objects:  48% (21/43)   Compressing objects:  51% (22/43)   Compressing objects:  53% (23/43)   Compressing objects:  55% (24/43)   Compressing objects:  58% (25/43)   Compressing objects:  60% (26/43)   Compressing objects:  62% (27/43)   Compressing objects:  65% (28/43)   Compressing objects:  67% (29/43)   Compressing objects:  69% (30/43)   Compressing objects:  72% (31/43)   Compressing objects:  74% (32/43)   Compressing objects:  76% (33/43)   Compressing objects:  79% (34/43)   Compressing objects:  81% (35/43)   Compressing objects:  83% (36/43)   Compressing objects:  86% (37/43)   Compressing objects:  88% (38/43)   Compressing objects:  90% (39/43)   Compressing objects:  93% (40/43)   Compressing objects:  95% (41/43)   Compressing objects:  97% (42/43)   Compressing objects: 100% (43/43)   Compressing objects: 100% (43/43), done.
-Writing objects:   1% (1/51)   Writing objects:   3% (2/51)   Writing objects:   5% (3/51)   Writing objects:   7% (4/51)   Writing objects:   9% (5/51)   Writing objects:  11% (6/51)   Writing objects:  13% (7/51)   Writing objects:  15% (8/51)   Writing objects:  19% (10/51)   Writing objects:  21% (11/51)   Writing objects:  23% (12/51)   Writing objects:  25% (13/51)   Writing objects:  27% (14/51)   Writing objects:  29% (15/51)   Writing objects:  31% (16/51)   Writing objects:  33% (17/51)   Writing objects:  39% (20/51)   Writing objects:  41% (21/51)   Writing objects:  43% (22/51)   Writing objects:  45% (23/51)   Writing objects:  45% (23/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  47% (24/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  49% (25/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  50% (26/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  52% (27/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  54% (28/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  56% (29/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  58% (30/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  60% (31/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  62% (32/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  64% (33/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  66% (34/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  68% (35/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  70% (36/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  72% (37/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  74% (38/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  76% (39/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  78% (40/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  80% (41/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  82% (42/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  84% (43/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  86% (44/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  88% (45/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  90% (46/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  92% (47/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  94% (48/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  96% (49/51), 1.30 MiB | 395.00 KiB/s   Writing objects:  98% (50/51), 1.30 MiB | 395.00 KiB/s   Writing objects: 100% (51/51), 1.30 MiB | 395.00 KiB/s   Writing objects: 100% (51/51), 1.44 MiB | 395.00 KiB/s, done.
-Total 51 (delta 21), reused 0 (delta 0)
-To git@github.com:rlundquist3/arb-server.git
-   21919ba..a707cab  master -> master
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ git remote
-heroku
-origin
-(venv)]0;ArbServerriley@rileylundquist:~/Development/ArbServer$ cd [K[K[Kcd ./[K/[K./Android/ [A
-(venv)]0;Androidriley@rileylundquist:~/Development/Android$ ls
-[0m[01;34mandroid-ndk-r10e[0m  [01;34marb[0m        [01;34mliftsense-util[0m  [01;34mOpenCV-android-sdk[0m
-[01;34mandroid-studio[0m    [01;34mliftsense[0m  [01;34mMyApplication[0m   [01;34mSdk[0m
-(venv)]0;Androidriley@rileylundquist:~/Development/Android$ cd arb/
-(venv)]0;arbriley@rileylundquist:~/Development/Android/arb$ ls
-[0m[01;34mapp[0m      build.gradle       gradlew.bat       settings.gradle
-arb.iml  [01;34mgradle[0m             LICENSE
-Arb.iml  gradle.properties  local.properties
-[01;34mbuild[0m    [01;32mgradlew[0m            README.md
-(venv)]0;arbriley@rileylundquist:~/Development/Android/arb$ git add .
-(venv)]0;arbriley@rileylundquist:~/Development/Android/arb$ git commit - am 'about[K[K[K[K[Kserver interatoon[K[K[K[Kction working for about page'
-[dev 5650826] server interaction working for about page
- 20 files changed, 339 insertions(+), 37 deletions(-)
- create mode 100644 app/src/main/ic_launcher-web.png
- create mode 100644 app/src/main/java/com/rileylundquist/arb/AboutFragment.java
- create mode 100644 app/src/main/java/com/rileylundquist/arb/ServerConnection.java
- create mode 100644 app/src/main/res/drawable/ic_info_black_24dp.xml
- create mode 100644 app/src/main/res/layout/fragment_about.xml
- rewrite app/src/main/res/mipmap-hdpi/ic_launcher.png (99%)
- rewrite app/src/main/res/mipmap-mdpi/ic_launcher.png (99%)
- rewrite app/src/main/res/mipmap-xhdpi/ic_launcher.png (98%)
- rewrite app/src/main/res/mipmap-xxhdpi/ic_launcher.png (99%)
- rewrite app/src/main/res/mipmap-xxxhdpi/ic_launcher.png (99%)
-(venv)]0;arbriley@rileylundquist:~/Development/Android/arb$ git add .
-(venv)]0;arbriley@rileylundquist:~/Development/Android/arb$ git commmit  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kit - am 'fixing navigation stack'
-[dev a5ff103] fixing navigation stack
- 5 files changed, 36 insertions(+), 3 deletions(-)
- create mode 100644 app/src/main/res/drawable/ic_map_black_24px.xml
-(venv)]0;arbriley@rileylundquist:~/Development/Android/arb$ git push ori gin dev
-Counting objects: 91, done.
-Delta compression using up to 4 threads.
-Compressing objects:   2% (1/50)   Compressing objects:   4% (2/50)   Compressing objects:   6% (3/50)   Compressing objects:   8% (4/50)   Compressing objects:  10% (5/50)   Compressing objects:  12% (6/50)   Compressing objects:  14% (7/50)   Compressing objects:  16% (8/50)   Compressing objects:  18% (9/50)   Compressing objects:  20% (10/50)   Compressing objects:  22% (11/50)   Compressing objects:  24% (12/50)   Compressing objects:  26% (13/50)   Compressing objects:  28% (14/50)   Compressing objects:  30% (15/50)   Compressing objects:  32% (16/50)   Compressing objects:  34% (17/50)   Compressing objects:  36% (18/50)   Compressing objects:  38% (19/50)   Compressing objects:  40% (20/50)   Compressing objects:  42% (21/50)   Compressing objects:  44% (22/50)   Compressing objects:  46% (23/50)   Compressing objects:  48% (24/50)   Compressing objects:  50% (25/50)   Compressing objects:  52% (26/50)   Compressing objects:  54% (27/50)   Compressing objects:  56% (28/50)   Compressing objects:  58% (29/50)   Compressing objects:  60% (30/50)   Compressing objects:  62% (31/50)   Compressing objects:  64% (32/50)   Compressing objects:  66% (33/50)   Compressing objects:  68% (34/50)   Compressing objects:  70% (35/50)   Compressing objects:  72% (36/50)   Compressing objects:  74% (37/50)   Compressing objects:  76% (38/50)   Compressing objects:  78% (39/50)   Compressing objects:  80% (40/50)   Compressing objects:  82% (41/50)   Compressing objects:  84% (42/50)   Compressing objects:  86% (43/50)   Compressing objects:  88% (44/50)   Compressing objects:  90% (45/50)   Compressing objects:  92% (46/50)   Compressing objects:  94% (47/50)   Compressing objects:  96% (48/50)   Compressing objects:  98% (49/50)   Compressing objects: 100% (50/50)   Compressing objects: 100% (50/50), done.
-Writing objects:   1% (1/61)   Writing objects:   3% (2/61)   Writing objects:   4% (3/61)   Writing objects:   6% (4/61)   Writing objects:   8% (5/61)   Writing objects:   9% (6/61)   Writing objects:  11% (7/61)   Writing objects:  13% (8/61)   Writing objects:  14% (9/61)   Writing objects:  16% (10/61)   Writing objects:  18% (11/61)   Writing objects:  19% (12/61)   Writing objects:  21% (13/61)   Writing objects:  22% (14/61)   Writing objects:  24% (15/61)   Writing objects:  26% (16/61)   Writing objects:  27% (17/61)   Writing objects:  29% (18/61)   Writing objects:  31% (19/61)   Writing objects:  
+    # This should detect bash and zsh, which have a hash command that must
+    # be called to get it to forget past commands.  Without forgetting
+    # past commands the $PATH changes we made may not be respected
+    if [ -n "$BASH" -o -n "$ZSH_VERSION" ] ; then
+        hash -r 2>/dev/null
+    fi
+
+    if [ -n "$_OLD_VIRTUAL_PS1" ] ; then
+        PS1="$_OLD_VIRTUAL_PS1"
+        export PS1
+        unset _OLD_VIRTUAL_PS1
+    fi
+
+    unset VIRTUAL_ENV
+    if [ ! "$1" = "nondestructive" ] ; then
+    # Self destruct!
+        unset -f deactivate
+    fi
+}
+
+# unset irrelevant variables
+deactivate nondestructive
+
+VIRTUAL_ENV="/home/riley/Development/ArbServer/venv"
+export VIRTUAL_ENV
+
+_OLD_VIRTUAL_PATH="$PATH"
+PATH="$VIRTUAL_ENV/bin:$PATH"
+export PATH
+
+# unset PYTHONHOME if set
+# this will fail if PYTHONHOME is set to the empty string (which is bad anyway)
+# could use `if (set -u; : $PYTHONHOME) ;` in bash
+if [ -n "$PYTHONHOME" ] ; then
+    _OLD_VIRTUAL_PYTHONHOME="$PYTHONHOME"
+    unset PYTHONHOME
+fi
+
+if [ -z "$VIRTUAL_ENV_DISABLE_PROMPT" ] ; then
+    _OLD_VIRTUAL_PS1="$PS1"
+    if [ "x" != x ] ; then
+        PS1="$PS1"
+    else
+    if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
+        # special case for Aspen magic directories
+        # see http://www.zetadev.com/software/aspen/
+        PS1="[`basename \`dirname \"$VIRTUAL_ENV\"\``] $PS1"
+    else
+        PS1="(`basename \"$VIRTUAL_ENV\"`)$PS1"
+    fi
+    fi
+    export PS1
+fi
+
+alias pydoc="python -m pydoc"
+
+# This should detect bash and zsh, which have a hash command that must
+# be called to get it to forget past commands.  Without forgetting
+# past commands the $PATH changes we made may not be respected
+if [ -n "$BASH" -o -n "$ZSH_VERSION" ] ; then
+    hash -r 2>/dev/null
+fi

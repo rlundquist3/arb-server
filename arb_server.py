@@ -1,6 +1,6 @@
 from flask import request, url_for
 from flask.ext.api import FlaskAPI, status, exceptions
-from flaskext.mail import Mail, Message
+from flask.ext.mail import Mail, Message
 
 app = FlaskAPI(__name__)
 mail = Mail(app)
