@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request, url_for
 from flask.ext.api import FlaskAPI, status, exceptions
+from flask.ext.api.decorators import set_renderers
+from flask.ext.api.renderers import HTMLRenderer
 from flask.ext.mail import Mail, Message
 import shlex
 import subprocess
 from werkzeug import secure_filename
 
-UPLOAD_FOLDER = '/data/'
+UPLOAD_FOLDER = '/data_uploads/'
 ALLOWED_EXTENSIONS = set(['csv', 'json', 'kml'])
 
 app = FlaskAPI(__name__)
@@ -30,21 +32,27 @@ def allowed_file(filename):
 def db_import(filename):
     args = ['mongoimport', '--db', 'arb',
             '--type', filename.rsplit('.', 1)[1],
-            '--headerline', '--ignoreBlanks', 
+            '--headerline', '--ignoreBlanks',
             '--file', filename]
     proc = subprocess.Popen(args)
 
 @app.route('/', methods=['GET', 'POST'])
+@set_renderers(HTMLRenderer)
 def home():
     if request.method == 'POST':
+        print 'post'
+        print request.files
         file = request.files['file']
+        print 'checking file'
         if file and allowed_file(file.filename):
+            print 'file allowed'
             filename = secure_filename(file.filename)
+            print filename
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            print 'saved'
+            # db_import(filename)
 
-            db_import(filename)
-
-            return redirect(url_for('index'))
+            return redirect(url_for('main'))
     return render_template('main.jade')
 
 @app.route('/about/', methods=['GET'])
