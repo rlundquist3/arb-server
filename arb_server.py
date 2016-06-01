@@ -6,6 +6,7 @@ from flask.ext.mail import Mail, Message
 import shlex
 import subprocess
 from werkzeug import secure_filename
+from os import path
 
 UPLOAD_FOLDER = '/data_uploads/'
 ALLOWED_EXTENSIONS = set(['csv', 'json', 'kml'])
@@ -48,7 +49,9 @@ def home():
             print 'file allowed'
             filename = secure_filename(file.filename)
             print filename
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            print UPLOAD_FOLDER
+            print os.path.abspath()
+            file.save(os.path.join(os.path.abspath(__file__), app.config['UPLOAD_FOLDER'], filename))
             print 'saved'
             # db_import(filename)
 

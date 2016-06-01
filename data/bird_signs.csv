@@ -1,0 +1,3 @@
+FID,Date,Time,Type,Approx_dis,Species,Comment,GPS_Date,GPS_Time,Datafile,Unfilt_Pos,Latitude,Longitude,Point_ID
+0,7/21/2015 0:00:00,09:34:39am,Visual,10,grey catbird, ,7/21/2015 0:00:00,09:34:40am,LAA_MANMADE_7_21_15.,34,42.293936924,-85.699160780,6
+1,7/21/2015 0:00:00,09:35:16am,Song or call,20,eastern towhee,heard here several times,7/21/2015 0:00:00,09:35:18am,LAA_MANMADE_7_21_15.,45,42.293943979,-85.699166577,7

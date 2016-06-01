@@ -1,0 +1,12 @@
+FID,Date,Time,Species,Abundance,Comment,GPS_Date,GPS_Time,Datafile,Unfilt_Pos,Latitude,Longitude,Point_ID
+0,7/21/2015 0:00:00,09:53:52am,phlox?,Abundant,"only a few in bloom, all along trail",7/21/2015 0:00:00,09:53:54am,LAA_MANMADE_7_21_15.,66,42.293918818,-85.697789168,10
+1,7/21/2015 0:00:00,10:30:41am,woodland agrimony,Uncommon,just starting to bloom,7/21/2015 0:00:00,10:30:43am,LAA_MANMADE_7_21_15.,112,42.290432133,-85.696622346,15
+2,7/21/2015 0:00:00,10:32:51am,mayapple,Common,only on north side of path,7/21/2015 0:00:00,10:32:52am,LAA_MANMADE_7_21_15.,77,42.290441278,-85.696648042,16
+3,7/21/2015 0:00:00,11:02:59am,herb robert,Occasional,flowerung,7/21/2015 0:00:00,11:03:00am,LAA_MANMADE_7_21_15.,50,42.290563415,-85.698519935,23
+4,7/21/2015 0:00:00,11:04:36am,herb robert,Abundant,ground is covered clear boundry,7/21/2015 0:00:00,11:04:36am,LAA_MANMADE_7_21_15.,55,42.290833009,-85.698479250,24
+5,7/21/2015 0:00:00,11:23:25am,nipplewort,Occasional,also at entrance,7/21/2015 0:00:00,11:23:26am,LAA_MANMADE_7_21_15.,51,42.291815248,-85.700893868,33
+6,7/21/2015 0:00:00,12:37:03pm,sweet-scented bedstraw,Uncommon, ,7/21/2015 0:00:00,12:37:05pm,LAA_MANMADE_7_21_15.,143,42.289713006,-85.701212781,55
+7,7/21/2015 0:00:00,12:41:33pm,spotted wintergreen,Occasional,towards end of flowering,7/21/2015 0:00:00,12:41:35pm,LAA_MANMADE_7_21_15.,55,42.289888611,-85.700705997,56
+8,7/21/2015 0:00:00,01:00:48pm,spotted touch me not,Abundant,"very dense patch, flowering",7/21/2015 0:00:00,01:00:50pm,LAA_MANMADE_7_21_15.,44,42.288780602,-85.700102910,63
+9,7/21/2015 0:00:00,01:29:56pm,indian tobacco,Uncommon, ,7/21/2015 0:00:00,01:29:58pm,LAA_MANMADE_7_21_15.,54,42.290745046,-85.701022199,67
+10,7/24/2015 0:00:00,10:31:13am,sweet cicely,Occasional, ,7/24/2015 0:00:00,10:31:15am,LAA_MANMADE_7_21_15.,67,42.294131485,-85.700255870,76
