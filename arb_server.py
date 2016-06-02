@@ -97,8 +97,8 @@ def mail():
 @app.route('/<string:collection>/', methods=['GET'])
 def query(collection):
     cursor = db[collection].find()
-    items = [item for item in cursor]
-    return to_json(items)
+    items = [to_json(item) for item in cursor]
+    return items
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
