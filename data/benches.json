@@ -1,0 +1,101 @@
+[
+  {
+    "FID": 0,
+    "Comment": "small trail off old field",
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "09:58:02am",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 173,
+    "Latitude": 42.293774768,
+    "Longitude": -85.696257073,
+    "Point_ID": 11
+  },
+  {
+    "FID": 1,
+    "Comment": 0,
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "10:18:49am",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 62,
+    "Latitude": 42.292042027,
+    "Longitude": -85.696028743,
+    "Point_ID": 13
+  },
+  {
+    "FID": 2,
+    "Comment": 0,
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "10:44:29am",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 78,
+    "Latitude": 42.289163606,
+    "Longitude": -85.69698724,
+    "Point_ID": 20
+  },
+  {
+    "FID": 3,
+    "Comment": "nella langeland",
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "11:07:13am",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 33,
+    "Latitude": 42.291640076,
+    "Longitude": -85.698468271,
+    "Point_ID": 25
+  },
+  {
+    "FID": 4,
+    "Comment": 0,
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "11:30:16am",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 31,
+    "Latitude": 42.292428954,
+    "Longitude": -85.702752775,
+    "Point_ID": 37
+  },
+  {
+    "FID": 5,
+    "Comment": 0,
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "12:01:57pm",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 112,
+    "Latitude": 42.290909124,
+    "Longitude": -85.703133473,
+    "Point_ID": 43
+  },
+  {
+    "FID": 6,
+    "Comment": 0,
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "12:08:38pm",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 55,
+    "Latitude": 42.290770971,
+    "Longitude": -85.70512082,
+    "Point_ID": 45
+  },
+  {
+    "FID": 7,
+    "Comment": 0,
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "12:14:39pm",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 52,
+    "Latitude": 42.28974077,
+    "Longitude": -85.706228012,
+    "Point_ID": 47
+  },
+  {
+    "FID": 8,
+    "Comment": 0,
+    "GPS_Date": "7/24/2015 0:00:00",
+    "GPS_Time": "10:33:48am",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 102,
+    "Latitude": 42.293813054,
+    "Longitude": -85.699776501,
+    "Point_ID": 77
+  }
+]

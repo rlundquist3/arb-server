@@ -1,0 +1,19 @@
+[
+  {
+    "FID": 0,
+    "Date": "7/21/2015 0:00:00",
+    "Time": "10:02:34am",
+    "Type": "Visual",
+    "Approximat": 2,
+    "Species": "garter snake",
+    "Location": "Trail",
+    "Comment": "in shrub gray withnyellow stripe",
+    "GPS_Date": "7/21/2015 0:00:00",
+    "GPS_Time": "10:02:35am",
+    "Datafile": "LAA_MANMADE_7_21_15.",
+    "Unfilt_Pos": 76,
+    "Latitude": 42.293777186,
+    "Longitude": -85.696261331,
+    "Point_ID": 12
+  }
+]
